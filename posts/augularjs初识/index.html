@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+    
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self';">
+    
+
+    <meta name="author" content="WeiZeGuang&#39;Blog">
+    <meta name="description" content="AngularJS简介     AngularJS 是一个 JavaScript 框架。它可通过 标签添加到 HTML 页面。
+AngularJS 通过 指令，扩展了 HTML，且通过表达式绑定数据到 HTML。
+ eg：第一个AugularJS程序，实现计数器自增功能：
+首先要在项目下新建lib文件夹，导入augular.js文件
+&lt;!DOCTYPE html&gt; &lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;title&gt;Title&lt;/title&gt; &lt;/head&gt; &lt;body ng-app&gt; &lt;input type=&#34;number&#34; ng-model=&#34;value&#34;&gt; &lt;input type=&#34;button&#34; ng-click=&#34;value=value&#43;1&#34; value=&#34;增加&#34;&gt; &lt;script src=&#34;lib/angular.js&#34;&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; AugularJS 指令     AngularJS 指令是以 ng 作为前缀的 HTML 属性
+ 上面代码中用到的指令：
+  ng-app：该指令用于告诉 AngularJS ，当前这个元素是根元素。AngularJS 应用程序由ng-app定义，该元素里面是AugularJS的操作范围。原则上HTML 文档中只允许有一个 ng-app指令，如果有多个 ng-app 指令，则只有第一个会被使用。
+ ng-app 和 ng-app=&quot; &ldquo;">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="AngularJS初识"/>
+<meta name="twitter:description" content="AngularJS简介     AngularJS 是一个 JavaScript 框架。它可通过 标签添加到 HTML 页面。
+AngularJS 通过 指令，扩展了 HTML，且通过表达式绑定数据到 HTML。
+ eg：第一个AugularJS程序，实现计数器自增功能：
+首先要在项目下新建lib文件夹，导入augular.js文件
+&lt;!DOCTYPE html&gt; &lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;title&gt;Title&lt;/title&gt; &lt;/head&gt; &lt;body ng-app&gt; &lt;input type=&#34;number&#34; ng-model=&#34;value&#34;&gt; &lt;input type=&#34;button&#34; ng-click=&#34;value=value&#43;1&#34; value=&#34;增加&#34;&gt; &lt;script src=&#34;lib/angular.js&#34;&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; AugularJS 指令     AngularJS 指令是以 ng 作为前缀的 HTML 属性
+ 上面代码中用到的指令：
+  ng-app：该指令用于告诉 AngularJS ，当前这个元素是根元素。AngularJS 应用程序由ng-app定义，该元素里面是AugularJS的操作范围。原则上HTML 文档中只允许有一个 ng-app指令，如果有多个 ng-app 指令，则只有第一个会被使用。
+ ng-app 和 ng-app=&quot; &ldquo;"/>
+
+    <meta property="og:title" content="AngularJS初识" />
+<meta property="og:description" content="AngularJS简介     AngularJS 是一个 JavaScript 框架。它可通过 标签添加到 HTML 页面。
+AngularJS 通过 指令，扩展了 HTML，且通过表达式绑定数据到 HTML。
+ eg：第一个AugularJS程序，实现计数器自增功能：
+首先要在项目下新建lib文件夹，导入augular.js文件
+&lt;!DOCTYPE html&gt; &lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;title&gt;Title&lt;/title&gt; &lt;/head&gt; &lt;body ng-app&gt; &lt;input type=&#34;number&#34; ng-model=&#34;value&#34;&gt; &lt;input type=&#34;button&#34; ng-click=&#34;value=value&#43;1&#34; value=&#34;增加&#34;&gt; &lt;script src=&#34;lib/angular.js&#34;&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; AugularJS 指令     AngularJS 指令是以 ng 作为前缀的 HTML 属性
+ 上面代码中用到的指令：
+  ng-app：该指令用于告诉 AngularJS ，当前这个元素是根元素。AngularJS 应用程序由ng-app定义，该元素里面是AugularJS的操作范围。原则上HTML 文档中只允许有一个 ng-app指令，如果有多个 ng-app 指令，则只有第一个会被使用。
+ ng-app 和 ng-app=&quot; &ldquo;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://weizeguang.github.io/posts/augularjs%E5%88%9D%E8%AF%86/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-11T23:02:03&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-11T23:02:03&#43;08:00" />
+
+
+
+    <title>
+  AngularJS初识 · WeiZeG&#39;Blog
+</title>
+
+    
+      <link rel="canonical" href="https://weizeguang.github.io/posts/augularjs%E5%88%9D%E8%AF%86/">
+    
+
+    
+    
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" integrity="sha256-hEIt6X6xzye8ubyk8/uxjz68cRZHsJxoKS9fQ8idUGQ=" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.abe8b6775d85a01169c10329309df501aa8a008ab354002f7858f077cae76020.css" integrity="sha256-q&#43;i2d12FoBFpwQMpMJ31AaqKAIqzVAAveFjwd8rnYCA=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.89c82b6022b96f77aeb521b240daec4f87ea029d84d1c78b8acd0735b91b3c92.css" integrity="sha256-icgrYCK5b3eutSGyQNrsT4fqAp2E0ceLis0HNbkbPJI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.1/twemoji.min.js"
+        integrity="sha384-5f4X0lBluNY/Ib4VhGx0Pf6iDCF99VGXJIyYy7dDLY5QlEd7Ap0hICSSZA1XYbc4" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.81.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      WeiZeG&#39;Blog
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/readnote/">ReadingNotes</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://weizeguang.github.io/posts/augularjs%E5%88%9D%E8%AF%86/">
+              AngularJS初识
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2021-03-11T23:02:03&#43;08:00'>
+                March 11, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              阅读时间：2 分钟
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="/authors/weizeguang/">weizeguang</a></div>
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/augularjs/">AugularJS</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h2 id="angularjs简介">
+  AngularJS简介
+  <a class="heading-link" href="#angularjs%e7%ae%80%e4%bb%8b">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<blockquote>
+<p>AngularJS 是一个 <strong>JavaScript 框架</strong>。它可通过 <!-- raw HTML omitted --> 标签添加到 HTML 页面。</p>
+<p>AngularJS 通过 指令，扩展了 HTML，且通过表达式绑定数据到 HTML。</p>
+</blockquote>
+<p><strong>eg：第一个AugularJS程序，实现计数器自增功能：</strong></p>
+<p>首先要在项目下新建lib文件夹，导入augular.js文件</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#0f0;font-weight:bold">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="font-weight:bold">html</span> <span style="color:#007f7f">lang</span>=<span style="color:#0ff;font-weight:bold">&#34;en&#34;</span>&gt;
+&lt;<span style="font-weight:bold">head</span>&gt;
+    &lt;<span style="font-weight:bold">meta</span> <span style="color:#007f7f">charset</span>=<span style="color:#0ff;font-weight:bold">&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style="font-weight:bold">title</span>&gt;Title&lt;/<span style="font-weight:bold">title</span>&gt;
+&lt;/<span style="font-weight:bold">head</span>&gt;
+&lt;<span style="font-weight:bold">body</span> <span style="color:#007f7f">ng-app</span>&gt;
+    &lt;<span style="font-weight:bold">input</span> <span style="color:#007f7f">type</span>=<span style="color:#0ff;font-weight:bold">&#34;number&#34;</span> <span style="color:#007f7f">ng-model</span>=<span style="color:#0ff;font-weight:bold">&#34;value&#34;</span>&gt;
+    &lt;<span style="font-weight:bold">input</span> <span style="color:#007f7f">type</span>=<span style="color:#0ff;font-weight:bold">&#34;button&#34;</span> <span style="color:#007f7f">ng-click</span>=<span style="color:#0ff;font-weight:bold">&#34;value=value+1&#34;</span> <span style="color:#007f7f">value</span>=<span style="color:#0ff;font-weight:bold">&#34;增加&#34;</span>&gt;
+    &lt;<span style="font-weight:bold">script</span> <span style="color:#007f7f">src</span>=<span style="color:#0ff;font-weight:bold">&#34;lib/angular.js&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
+&lt;/<span style="font-weight:bold">body</span>&gt;
+&lt;/<span style="font-weight:bold">html</span>&gt;
+</code></pre></div><h2 id="augularjs-指令">
+  AugularJS 指令
+  <a class="heading-link" href="#augularjs-%e6%8c%87%e4%bb%a4">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<blockquote>
+<p>AngularJS 指令是以 <strong>ng</strong> 作为前缀的 HTML 属性</p>
+</blockquote>
+<p>上面代码中用到的指令：</p>
+<ul>
+<li>
+<p>ng-app：该指令用于告诉 AngularJS ，当前这个元素是根元素。AngularJS 应用程序由ng-app定义，该元素里面是AugularJS的操作范围。原则上HTML 文档中只允许有一个 ng-app指令，如果有多个 ng-app 指令，则只有第一个会被使用。</p>
+<blockquote>
+<p><strong>ng-app 和 ng-app=&quot; &ldquo;</strong></p>
+<p>ng-app有一个默认的模块</p>
+<p>ng-app = “自定义的模块”，是一个使用了自定义的模块，该自定义的模块继承了那个初始默认的模块，可以调用初始默认的模块的方法。</p>
+</blockquote>
+</li>
+<li>
+<p>ng-model：该指令可以将输入域的值与 AngularJS 创建的变量绑定</p>
+</li>
+<li>
+<p>ng-click：该指令告诉了 AngularJS HTML 元素被点击后需要执行的操作</p>
+</li>
+</ul>
+<h2 id="angularjs-模块与控制器">
+  AngularJS 模块与控制器
+  <a class="heading-link" href="#angularjs-%e6%a8%a1%e5%9d%97%e4%b8%8e%e6%8e%a7%e5%88%b6%e5%99%a8">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="1模块">
+  1）模块
+  <a class="heading-link" href="#1%e6%a8%a1%e5%9d%97">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>通过angular.module( )来创建模块</p>
+<p>该函数有两个参数：</p>
+<p>参数1：定义模块的名称</p>
+<p>参数2：一个数组，存放该模块所依赖的其他模块的名称，如果确定新模块没有依赖关系，必须设置为空数组[]</p>
+<p><strong>注意：通过angular.module()方法定义的模块是唯一的，如果重复定义就会覆盖前面的定义</strong></p>
+<p><strong>eg：定义模块，并在在html标签上启动该模块</strong></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">ng-app</span>=<span style="color:#0ff;font-weight:bold">&#34;myApp&#34;</span>&gt;&lt;/<span style="font-weight:bold">div</span>&gt;
+&lt;<span style="font-weight:bold">script</span>&gt;
+	<span style="color:#fff;font-weight:bold">var</span> app = angular.module(<span style="color:#0ff;font-weight:bold">&#34;myApp&#34;</span>,[]);
+&lt;/<span style="font-weight:bold">script</span>&gt;
+</code></pre></div><h3 id="2控制器">
+  2）控制器
+  <a class="heading-link" href="#2%e6%8e%a7%e5%88%b6%e5%99%a8">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<blockquote>
+<p>控制器是JavaScript对象，由标准的JavaScript对象的构造函数创建。当控制器通过ng-controller指令被添加到页面时，AngularJS会通过控制器构造函数生成一个对象。</p>
+<p>通过$scope对象与页面中的元素进行数据绑定，实现数据从控制器（Controller）到视图（View）的过程。可以看作是由控制器（Controller）封装后的ViewModel。</p>
+</blockquote>
+<p>怎么用？首先得声明模块，在模块下可以在标签上挂载控制器→控制器的作用范围仅限于当前模块→所有是局部控制器</p>
+<p>创建控制器语法：</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#fff;font-weight:bold">var</span> app = angular.module(<span style="color:#0ff;font-weight:bold">&#34;myApp&#34;</span>,[]);
+app.controller(<span style="color:#0ff;font-weight:bold">&#39;mainController&#39;</span>,<span style="color:#fff;font-weight:bold">function</span> ($scope) {
+    <span style="color:#007f7f">//可以为$scope准备各种数据
+</span><span style="color:#007f7f"></span>});
+</code></pre></div><p>.controller()函数两个参数：</p>
+<p>参数1：控制器名称</p>
+<p>参数2：控制器的回调函数，回调函数的参数$scope表示模块的作用域</p>
+<p><strong>eg：使用ng-controller指令为标签绑定控制器：</strong></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">ng-controller</span>=<span style="color:#0ff;font-weight:bold">&#34;mainController&#34;</span>&gt;&lt;/<span style="font-weight:bold">div</span>&gt;
+</code></pre></div><p><strong>eg：AugularJS中模块和控制器用法：</strong></p>
+<p>定义一个模块，在模块下定义了两个控制器，使用这两个控制器</p>
+<p><strong>导入angular.js文件时，必须放在操作之前，否则AngularJS操作不生效</strong></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#0f0;font-weight:bold">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="font-weight:bold">html</span> <span style="color:#007f7f">lang</span>=<span style="color:#0ff;font-weight:bold">&#34;en&#34;</span>&gt;
+&lt;<span style="font-weight:bold">head</span>&gt;
+    &lt;<span style="font-weight:bold">meta</span> <span style="color:#007f7f">charset</span>=<span style="color:#0ff;font-weight:bold">&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style="font-weight:bold">title</span>&gt;Title&lt;/<span style="font-weight:bold">title</span>&gt;
+&lt;/<span style="font-weight:bold">head</span>&gt;
+&lt;<span style="font-weight:bold">body</span> <span style="color:#007f7f">ng-app</span>=<span style="color:#0ff;font-weight:bold">&#34;app&#34;</span>&gt;
+
+    <span style="color:#007f7f">&lt;!--使用控制器1--&gt;</span>
+    &lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">ng-controller</span>=<span style="color:#0ff;font-weight:bold">&#34;mainController1&#34;</span>&gt;
+        &lt;<span style="font-weight:bold">span</span>&gt;{{name}}&lt;/<span style="font-weight:bold">span</span>&gt;
+    &lt;/<span style="font-weight:bold">div</span>&gt;
+
+    <span style="color:#007f7f">&lt;!--使用控制器2--&gt;</span>
+    &lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">ng-controller</span>=<span style="color:#0ff;font-weight:bold">&#34;mainController2&#34;</span>&gt;
+        &lt;<span style="font-weight:bold">span</span>&gt;{{name}}&lt;/<span style="font-weight:bold">span</span>&gt;
+    &lt;/<span style="font-weight:bold">div</span>&gt;
+    <span style="color:#007f7f">&lt;!--导入angular.js文件--&gt;</span>
+    &lt;<span style="font-weight:bold">script</span> <span style="color:#007f7f">src</span>=<span style="color:#0ff;font-weight:bold">&#34;lib/angular.js&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
+    &lt;<span style="font-weight:bold">script</span>&gt;
+        <span style="color:#007f7f">//自定义模块
+</span><span style="color:#007f7f"></span>        <span style="color:#fff;font-weight:bold">var</span> app = angular.module(<span style="color:#0ff;font-weight:bold">&#34;app&#34;</span>,[]);
+        
+        <span style="color:#007f7f">//创建控制器1
+</span><span style="color:#007f7f"></span>        app.controller(<span style="color:#0ff;font-weight:bold">&#39;mainController1&#39;</span>,<span style="color:#fff;font-weight:bold">function</span> ($scope) {
+            $scope.name = <span style="color:#0ff;font-weight:bold">&#34;zhangSan&#34;</span>;
+        });
+        <span style="color:#007f7f">//创建控制器2
+</span><span style="color:#007f7f"></span>        app.controller(<span style="color:#0ff;font-weight:bold">&#39;mainController2&#39;</span>,<span style="color:#fff;font-weight:bold">function</span> ($scope) {
+            $scope.name = <span style="color:#0ff;font-weight:bold">&#34;liSi&#34;</span>;
+        });
+    &lt;/<span style="font-weight:bold">script</span>&gt;
+&lt;/<span style="font-weight:bold">body</span>&gt;
+&lt;/<span style="font-weight:bold">html</span>&gt;
+</code></pre></div><h3 id="3模块间的互相依赖">
+  3）模块间的互相依赖
+  <a class="heading-link" href="#3%e6%a8%a1%e5%9d%97%e9%97%b4%e7%9a%84%e4%ba%92%e7%9b%b8%e4%be%9d%e8%b5%96">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>模块的相互依赖可以实现功能和数据共享</p>
+<p><strong>eg：demo模块依赖myApp模块，demo模块可以访问myApp模块里的数据</strong></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#0f0;font-weight:bold">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="font-weight:bold">html</span> <span style="color:#007f7f">lang</span>=<span style="color:#0ff;font-weight:bold">&#34;en&#34;</span>&gt;
+&lt;<span style="font-weight:bold">head</span>&gt;
+    &lt;<span style="font-weight:bold">meta</span> <span style="color:#007f7f">charset</span>=<span style="color:#0ff;font-weight:bold">&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style="font-weight:bold">title</span>&gt;Title&lt;/<span style="font-weight:bold">title</span>&gt;
+&lt;/<span style="font-weight:bold">head</span>&gt;
+&lt;<span style="font-weight:bold">body</span> <span style="color:#007f7f">ng-app</span>=<span style="color:#0ff;font-weight:bold">&#34;demo&#34;</span>&gt;
+
+    &lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">ng-controller</span>=<span style="color:#0ff;font-weight:bold">&#34;mainController&#34;</span>&gt;
+        &lt;<span style="font-weight:bold">span</span>&gt;{{name}}&lt;/<span style="font-weight:bold">span</span>&gt;&lt;<span style="font-weight:bold">br</span>&gt;
+    &lt;/<span style="font-weight:bold">div</span>&gt;
+
+&lt;<span style="font-weight:bold">script</span> <span style="color:#007f7f">src</span>=<span style="color:#0ff;font-weight:bold">&#34;lib/angular.js&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
+&lt;<span style="font-weight:bold">script</span>&gt;
+    <span style="color:#fff;font-weight:bold">var</span> myApp = angular.module(<span style="color:#0ff;font-weight:bold">&#34;myApp&#34;</span>,[]);
+    myApp.controller(<span style="color:#0ff;font-weight:bold">&#39;mainController&#39;</span>,<span style="color:#fff;font-weight:bold">function</span> ($scope) {
+        $scope.name = <span style="color:#0ff;font-weight:bold">&#34;zhangsan&#34;</span>;
+    });
+
+    <span style="color:#fff;font-weight:bold">var</span> demo = augular.model(<span style="color:#0ff;font-weight:bold">&#34;demo&#34;</span>,[<span style="color:#0ff;font-weight:bold">&#39;myApp&#39;</span>]);
+&lt;/<span style="font-weight:bold">script</span>&gt;
+&lt;/<span style="font-weight:bold">body</span>&gt;
+&lt;/<span style="font-weight:bold">html</span>&gt;
+</code></pre></div><p><strong>eg：appA和appB模块互相依赖，数据可以共享，但是两个模块的控制器重名时，使用的模块会先从自己里找</strong></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#0f0;font-weight:bold">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="font-weight:bold">html</span> <span style="color:#007f7f">lang</span>=<span style="color:#0ff;font-weight:bold">&#34;en&#34;</span>&gt;
+&lt;<span style="font-weight:bold">head</span>&gt;
+    &lt;<span style="font-weight:bold">meta</span> <span style="color:#007f7f">charset</span>=<span style="color:#0ff;font-weight:bold">&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style="font-weight:bold">title</span>&gt;Title&lt;/<span style="font-weight:bold">title</span>&gt;
+&lt;/<span style="font-weight:bold">head</span>&gt;
+&lt;<span style="font-weight:bold">body</span> <span style="color:#007f7f">ng-app</span>=<span style="color:#0ff;font-weight:bold">&#34;appA&#34;</span>&gt;
+
+    &lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">ng-controller</span>=<span style="color:#0ff;font-weight:bold">&#34;appController&#34;</span>&gt;
+        &lt;<span style="font-weight:bold">span</span>&gt;{{name}}&lt;/<span style="font-weight:bold">span</span>&gt;
+    &lt;/<span style="font-weight:bold">div</span>&gt;
+
+&lt;<span style="font-weight:bold">script</span> <span style="color:#007f7f">src</span>=<span style="color:#0ff;font-weight:bold">&#34;lib/angular.js&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
+&lt;<span style="font-weight:bold">script</span>&gt;
+    <span style="color:#fff;font-weight:bold">var</span> appA = angular.module(<span style="color:#0ff;font-weight:bold">&#34;appA&#34;</span>,[<span style="color:#0ff;font-weight:bold">&#39;appB&#39;</span>]);
+    appA.controller(<span style="color:#0ff;font-weight:bold">&#39;appController&#39;</span>,<span style="color:#fff;font-weight:bold">function</span> ($scope){
+        $scope.name = <span style="color:#0ff;font-weight:bold">&#34;zhangsan&#34;</span>;
+    })
+    <span style="color:#fff;font-weight:bold">var</span> appB = angular.module(<span style="color:#0ff;font-weight:bold">&#34;appB&#34;</span>,[<span style="color:#0ff;font-weight:bold">&#39;appA&#39;</span>]);
+    appB.controller(<span style="color:#0ff;font-weight:bold">&#39;appController&#39;</span>,<span style="color:#fff;font-weight:bold">function</span> ($scope){
+        $scope.name = <span style="color:#0ff;font-weight:bold">&#34;lisi&#34;</span>;
+    })
+&lt;/<span style="font-weight:bold">script</span>&gt;
+&lt;/<span style="font-weight:bold">body</span>&gt;
+&lt;/<span style="font-weight:bold">html</span>&gt;
+</code></pre></div><h2 id="augularjs作用域">
+  AugularJS作用域
+  <a class="heading-link" href="#augularjs%e4%bd%9c%e7%94%a8%e5%9f%9f">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<blockquote>
+<p>作用域（$scope）是控制器回调函数的参数，当一个控制器被定义时，就产生了一个作用域。在$scope作用域中定义的属性和函数，在视图（html）中可以获取使用。Scope(作用域) 是应用在 HTML (视图) 和 JavaScript (控制器)之间的纽带</p>
+</blockquote>
+<h3 id="根作用域rootscope">
+  根作用域$rootScope
+  <a class="heading-link" href="#%e6%a0%b9%e4%bd%9c%e7%94%a8%e5%9f%9frootscope">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<blockquote>
+<p>所有的应用都有一个 <strong>$rootScope</strong>，它可以作用在 <strong>ng-app</strong> 指令包含的所有 HTML 元素中，相当于全局变量。</p>
+<p><strong>$rootScope</strong> 可作用于整个应用中。是各个控制器中 scope 的桥梁。用 $rootscope 定义的值，可以在各个控制器中使用</p>
+</blockquote>
+<p><strong>eg：$rootScope 可作用于整个应用中</strong></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="font-weight:bold">body</span> <span style="color:#007f7f">ng-app</span>=<span style="color:#0ff;font-weight:bold">&#34;myApp&#34;</span>&gt;
+
+    &lt;<span style="font-weight:bold">span</span>&gt;{{rName}}&lt;/<span style="font-weight:bold">span</span>&gt;
+
+    &lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">ng-controller</span>=<span style="color:#0ff;font-weight:bold">&#34;demo&#34;</span>&gt;
+        &lt;<span style="font-weight:bold">span</span>&gt;{{rName}}&lt;/<span style="font-weight:bold">span</span>&gt;&lt;<span style="font-weight:bold">br</span>&gt;
+        &lt;<span style="font-weight:bold">span</span>&gt;{{name}}&lt;/<span style="font-weight:bold">span</span>&gt;
+    &lt;/<span style="font-weight:bold">div</span>&gt;
+
+&lt;<span style="font-weight:bold">script</span> <span style="color:#007f7f">src</span>=<span style="color:#0ff;font-weight:bold">&#34;lib/angular.js&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
+&lt;<span style="font-weight:bold">script</span>&gt;
+    <span style="color:#fff;font-weight:bold">var</span> app = angular.module(<span style="color:#0ff;font-weight:bold">&#34;myApp&#34;</span>,[]);
+    app.controller(<span style="color:#0ff;font-weight:bold">&#39;demo&#39;</span>,<span style="color:#fff;font-weight:bold">function</span> ($scope,$rootScope) {
+        $scope.name = <span style="color:#0ff;font-weight:bold">&#34;scope&#34;</span>;
+        $rootScope.rName = <span style="color:#0ff;font-weight:bold">&#34;rootScope&#34;</span>;
+    });
+&lt;/<span style="font-weight:bold">script</span>&gt;
+&lt;/<span style="font-weight:bold">body</span>&gt;
+</code></pre></div>
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>爱生活，爱分享，欢迎来到我的博客</p>
+      
+      
+        ©
+        
+        2021
+         WeiZeGuang&#39;Blog 
+      
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js" integrity="sha256-runIpGTrezU0xxEPfF4WnnA54v2ScQ4GJtRR1nJa8Tc="></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+    
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "token"}'></script>
+
+
+
+    <script type="application/javascript">
+  var _paq = window._paq = window._paq || [];
+   
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.example.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'ABCDE']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=gid"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'gid');
+</script>
+
+  </body>
+
+</html>
