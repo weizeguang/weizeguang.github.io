@@ -40,24 +40,6 @@ AngularJS 通过 指令，扩展了 HTML，且通过表达式绑定数据到 HTM
     </item>
     
     <item>
-      <title></title>
-      <link>https://weizeguang.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://weizeguang.github.io/about/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://weizeguang.github.io/readnote/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://weizeguang.github.io/readnote/projects/</guid>
-      <description>嗯哼，没有呢</description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>https://weizeguang.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
