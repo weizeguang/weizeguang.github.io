@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>WeiZeG&#39;Blog</title>
-    <link>https://weizeguang.github.io/</link>
-    <description>Recent content on WeiZeG&#39;Blog</description>
+    <title>魏泽广 on WeiZeG&#39;Blog</title>
+    <link>https://weizeguang.github.io/authors/%E9%AD%8F%E6%B3%BD%E5%B9%BF/</link>
+    <description>Recent content in 魏泽广 on WeiZeG&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://weizeguang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://weizeguang.github.io/authors/%E9%AD%8F%E6%B3%BD%E5%B9%BF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>玩游戏有什么用，为什么我决定不玩游戏了？</title>
       <link>https://weizeguang.github.io/readnote/blog/</link>
@@ -21,70 +21,6 @@
  但答案是这个吗？问题解决到此为止了吗？这似乎还不是根本原因。那游戏能够创造快乐的本质到底是什么？
  整理一下逻辑，每款游戏都对应一套规则，有目标，有奖罚，有排名，有成就感和不确定性，规则赋予了游戏价值，而游戏也正是在于他的过程，对于最后的结果只是一个附带奖励，如果能无视规则无法直接触碰结果，那游戏就丧失了意义。回想一下当下流行的游戏里都有什么内容？绝地求生，塔防，GTA激情冒险，巫师3的奇幻剧情，还有射击枪战&amp;hellip;，呼&amp;hellip;撕开表皮再想一圈几乎可以总结出几个词：求生，竞争，暴力，色情，经营，虚拟乌托邦世界，每个词好像又是人性弱点的映射，这样看，游戏不就是在顺从人类的原始欲望吗？心理学家马斯洛，把人的需求分为五个层次：生理需求，安全需求，社交需求，尊重需求，自我实现，现在的高质量游戏除了不能给人提供食物和水，其他需求几乎可以全部满足。从小型的益智，冒险游戏到如今的3A大作，VR游戏，它变得更加刺激你的感官，让你直呼过瘾，但这何尝不是一次又一次的沉沦？你一旦停止思考，它就不断的挖掘你的欲望，利用人类对物质的贪婪和成瘾性，达到一种“控制感”，时间和精力悄然流逝，换来的是短暂的快乐，和快乐之后面对现实的巨大落差，与无力感。于是再次投向游戏。
  玩游戏有什么用？每个人感悟不同，对于我来说答案已经不言而喻。毫无意义。So wake up and now I&amp;rsquo;m going to get real peace and joy.</description>
-    </item>
-    
-    <item>
-      <title>AngularJS初识</title>
-      <link>https://weizeguang.github.io/posts/augularjs%E5%88%9D%E8%AF%86/</link>
-      <pubDate>Thu, 11 Mar 2021 23:02:03 +0800</pubDate>
-      
-      <guid>https://weizeguang.github.io/posts/augularjs%E5%88%9D%E8%AF%86/</guid>
-      <description>AngularJS简介     AngularJS 是一个 JavaScript 框架。它可通过 标签添加到 HTML 页面。
-AngularJS 通过 指令，扩展了 HTML，且通过表达式绑定数据到 HTML。
- eg：第一个AugularJS程序，实现计数器自增功能：
-首先要在项目下新建lib文件夹，导入augular.js文件
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Title&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body ng-app&amp;gt; &amp;lt;input type=&amp;#34;number&amp;#34; ng-model=&amp;#34;value&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;button&amp;#34; ng-click=&amp;#34;value=value+1&amp;#34; value=&amp;#34;增加&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;lib/angular.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; AugularJS 指令     AngularJS 指令是以 ng 作为前缀的 HTML 属性
- 上面代码中用到的指令：
-  ng-app：该指令用于告诉 AngularJS ，当前这个元素是根元素。AngularJS 应用程序由ng-app定义，该元素里面是AugularJS的操作范围。原则上HTML 文档中只允许有一个 ng-app指令，如果有多个 ng-app 指令，则只有第一个会被使用。
- ng-app 和 ng-app=&amp;quot; &amp;ldquo;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://weizeguang.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://weizeguang.github.io/about/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://weizeguang.github.io/readnote/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://weizeguang.github.io/readnote/projects/</guid>
-      <description>嗯哼，没有呢</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://weizeguang.github.io/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://weizeguang.github.io/contact/</guid>
-      <description>邮箱：w230014@163.com
-qq：2085812744</description>
-    </item>
-    
-    <item>
-      <title>First snippet</title>
-      <link>https://weizeguang.github.io/snippets/first/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://weizeguang.github.io/snippets/first/</guid>
-      <description>This content is in snippets/first/index.md
-pwd </description>
-    </item>
-    
-    <item>
-      <title>Second snippet</title>
-      <link>https://weizeguang.github.io/snippets/second/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://weizeguang.github.io/snippets/second/</guid>
-      <description>This content is in snippets/second/index.md
-ls -la </description>
     </item>
     
   </channel>
