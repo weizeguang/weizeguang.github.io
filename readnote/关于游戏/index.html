@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+    
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self';">
+    
+
+    <meta name="author" content="WeiZeGuang&#39;Blog">
+    <meta name="description" content="2021年4月5日，我终于盼到了清明节，舍友们都回家了，我很珍惜这个来之不易的安静。
+ 现在傍晚六点外面雨声淅沥，湿冷的空气让人只想在躲在被窝里。我躺在床上，闭上眼睛，做了一个长达5秒的呼吸，此时时间变慢，节奏变缓&hellip;
+ 老长一段时间了，每天的状态就是：吃饭&#43;上号，我打开时间管理助手，映入眼帘的是软件使用时间的排名，第一名的话毫无疑问，是我最爱玩的。对于此时所见，想问自己几个问题
+ 究竟是什么原因让你如此喜欢游戏？游戏的本质到底是什么？玩游戏到底有什么用？
+ 作为一个人，本性总是趋于懒惰的，但人又是社会性的，这就说明人一定会有各种大小压力，每次都战胜肉体去工作学习，是很难的，但如果不做，欠下的一定会还回来，时间会把这些东西积累到一个点，“好难啊”，比如一个问题听不懂其实根本原因也只是之前的问题没有解决。人在这种矛盾中徘徊是很难受的，而一把游戏好像可以让你喘口气，暂时离开现实，你只管开心，大脑分泌的多巴胺让你快乐十足。喘口气吧，这就是我喜欢游戏的原因。
+ 但答案是这个吗？问题解决到此为止了吗？这似乎还不是根本原因。那游戏能够创造快乐的本质到底是什么？
+ 整理一下逻辑，每款游戏都对应一套规则，有目标，有奖罚，有排名，有成就感和不确定性，规则赋予了游戏价值，而游戏也正是在于他的过程，对于最后的结果只是一个附带奖励，如果能无视规则无法直接触碰结果，那游戏就丧失了意义。回想一下当下流行的游戏里都有什么内容？绝地求生，塔防，GTA激情冒险，巫师3的奇幻剧情，还有射击枪战&hellip;，呼&hellip;撕开表皮再想一圈几乎可以总结出几个词：求生，竞争，暴力，色情，经营，虚拟乌托邦世界，每个词好像又是人性弱点的映射，这样看，游戏不就是在顺从人类的原始欲望吗？心理学家马斯洛，把人的需求分为五个层次：生理需求，安全需求，社交需求，尊重需求，自我实现，现在的高质量游戏除了不能给人提供食物和水，其他需求几乎可以全部满足。从小型的益智，冒险游戏到如今的3A大作，VR游戏，它变得更加刺激你的感官，让你直呼过瘾，但这何尝不是一次又一次的沉沦？你一旦停止思考，它就不断的挖掘你的欲望，利用人类对物质的贪婪和成瘾性，达到一种“控制感”，时间和精力悄然流逝，换来的是短暂的快乐，和快乐之后面对现实的巨大落差，与无力感。于是再次投向游戏。
+ 玩游戏有什么用？每个人感悟不同，对于我来说答案已经不言而喻。毫无意义。So wake up and now I&rsquo;m going to get real peace and joy.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="玩游戏有用吗？"/>
+<meta name="twitter:description" content="2021年4月5日，我终于盼到了清明节，舍友们都回家了，我很珍惜这个来之不易的安静。
+ 现在傍晚六点外面雨声淅沥，湿冷的空气让人只想在躲在被窝里。我躺在床上，闭上眼睛，做了一个长达5秒的呼吸，此时时间变慢，节奏变缓&hellip;
+ 老长一段时间了，每天的状态就是：吃饭&#43;上号，我打开时间管理助手，映入眼帘的是软件使用时间的排名，第一名的话毫无疑问，是我最爱玩的。对于此时所见，想问自己几个问题
+ 究竟是什么原因让你如此喜欢游戏？游戏的本质到底是什么？玩游戏到底有什么用？
+ 作为一个人，本性总是趋于懒惰的，但人又是社会性的，这就说明人一定会有各种大小压力，每次都战胜肉体去工作学习，是很难的，但如果不做，欠下的一定会还回来，时间会把这些东西积累到一个点，“好难啊”，比如一个问题听不懂其实根本原因也只是之前的问题没有解决。人在这种矛盾中徘徊是很难受的，而一把游戏好像可以让你喘口气，暂时离开现实，你只管开心，大脑分泌的多巴胺让你快乐十足。喘口气吧，这就是我喜欢游戏的原因。
+ 但答案是这个吗？问题解决到此为止了吗？这似乎还不是根本原因。那游戏能够创造快乐的本质到底是什么？
+ 整理一下逻辑，每款游戏都对应一套规则，有目标，有奖罚，有排名，有成就感和不确定性，规则赋予了游戏价值，而游戏也正是在于他的过程，对于最后的结果只是一个附带奖励，如果能无视规则无法直接触碰结果，那游戏就丧失了意义。回想一下当下流行的游戏里都有什么内容？绝地求生，塔防，GTA激情冒险，巫师3的奇幻剧情，还有射击枪战&hellip;，呼&hellip;撕开表皮再想一圈几乎可以总结出几个词：求生，竞争，暴力，色情，经营，虚拟乌托邦世界，每个词好像又是人性弱点的映射，这样看，游戏不就是在顺从人类的原始欲望吗？心理学家马斯洛，把人的需求分为五个层次：生理需求，安全需求，社交需求，尊重需求，自我实现，现在的高质量游戏除了不能给人提供食物和水，其他需求几乎可以全部满足。从小型的益智，冒险游戏到如今的3A大作，VR游戏，它变得更加刺激你的感官，让你直呼过瘾，但这何尝不是一次又一次的沉沦？你一旦停止思考，它就不断的挖掘你的欲望，利用人类对物质的贪婪和成瘾性，达到一种“控制感”，时间和精力悄然流逝，换来的是短暂的快乐，和快乐之后面对现实的巨大落差，与无力感。于是再次投向游戏。
+ 玩游戏有什么用？每个人感悟不同，对于我来说答案已经不言而喻。毫无意义。So wake up and now I&rsquo;m going to get real peace and joy."/>
+
+    <meta property="og:title" content="玩游戏有用吗？" />
+<meta property="og:description" content="2021年4月5日，我终于盼到了清明节，舍友们都回家了，我很珍惜这个来之不易的安静。
+ 现在傍晚六点外面雨声淅沥，湿冷的空气让人只想在躲在被窝里。我躺在床上，闭上眼睛，做了一个长达5秒的呼吸，此时时间变慢，节奏变缓&hellip;
+ 老长一段时间了，每天的状态就是：吃饭&#43;上号，我打开时间管理助手，映入眼帘的是软件使用时间的排名，第一名的话毫无疑问，是我最爱玩的。对于此时所见，想问自己几个问题
+ 究竟是什么原因让你如此喜欢游戏？游戏的本质到底是什么？玩游戏到底有什么用？
+ 作为一个人，本性总是趋于懒惰的，但人又是社会性的，这就说明人一定会有各种大小压力，每次都战胜肉体去工作学习，是很难的，但如果不做，欠下的一定会还回来，时间会把这些东西积累到一个点，“好难啊”，比如一个问题听不懂其实根本原因也只是之前的问题没有解决。人在这种矛盾中徘徊是很难受的，而一把游戏好像可以让你喘口气，暂时离开现实，你只管开心，大脑分泌的多巴胺让你快乐十足。喘口气吧，这就是我喜欢游戏的原因。
+ 但答案是这个吗？问题解决到此为止了吗？这似乎还不是根本原因。那游戏能够创造快乐的本质到底是什么？
+ 整理一下逻辑，每款游戏都对应一套规则，有目标，有奖罚，有排名，有成就感和不确定性，规则赋予了游戏价值，而游戏也正是在于他的过程，对于最后的结果只是一个附带奖励，如果能无视规则无法直接触碰结果，那游戏就丧失了意义。回想一下当下流行的游戏里都有什么内容？绝地求生，塔防，GTA激情冒险，巫师3的奇幻剧情，还有射击枪战&hellip;，呼&hellip;撕开表皮再想一圈几乎可以总结出几个词：求生，竞争，暴力，色情，经营，虚拟乌托邦世界，每个词好像又是人性弱点的映射，这样看，游戏不就是在顺从人类的原始欲望吗？心理学家马斯洛，把人的需求分为五个层次：生理需求，安全需求，社交需求，尊重需求，自我实现，现在的高质量游戏除了不能给人提供食物和水，其他需求几乎可以全部满足。从小型的益智，冒险游戏到如今的3A大作，VR游戏，它变得更加刺激你的感官，让你直呼过瘾，但这何尝不是一次又一次的沉沦？你一旦停止思考，它就不断的挖掘你的欲望，利用人类对物质的贪婪和成瘾性，达到一种“控制感”，时间和精力悄然流逝，换来的是短暂的快乐，和快乐之后面对现实的巨大落差，与无力感。于是再次投向游戏。
+ 玩游戏有什么用？每个人感悟不同，对于我来说答案已经不言而喻。毫无意义。So wake up and now I&rsquo;m going to get real peace and joy." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://weizeguang.github.io/readnote/%E5%85%B3%E4%BA%8E%E6%B8%B8%E6%88%8F/" /><meta property="article:section" content="readnote" />
+<meta property="article:published_time" content="2021-04-07T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-04-07T00:00:00&#43;00:00" />
+
+
+
+    <title>
+  玩游戏有用吗？ · WeiZeG&#39;Blog
+</title>
+
+    
+      <link rel="canonical" href="https://weizeguang.github.io/readnote/%E5%85%B3%E4%BA%8E%E6%B8%B8%E6%88%8F/">
+    
+
+    
+    
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" integrity="sha256-hEIt6X6xzye8ubyk8/uxjz68cRZHsJxoKS9fQ8idUGQ=" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.abe8b6775d85a01169c10329309df501aa8a008ab354002f7858f077cae76020.css" integrity="sha256-q&#43;i2d12FoBFpwQMpMJ31AaqKAIqzVAAveFjwd8rnYCA=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.89c82b6022b96f77aeb521b240daec4f87ea029d84d1c78b8acd0735b91b3c92.css" integrity="sha256-icgrYCK5b3eutSGyQNrsT4fqAp2E0ceLis0HNbkbPJI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.1/twemoji.min.js"
+        integrity="sha384-5f4X0lBluNY/Ib4VhGx0Pf6iDCF99VGXJIyYy7dDLY5QlEd7Ap0hICSSZA1XYbc4" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.81.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      WeiZeG&#39;Blog
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/readnote/">ReadingNotes</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://weizeguang.github.io/readnote/%E5%85%B3%E4%BA%8E%E6%B8%B8%E6%88%8F/">
+          玩游戏有用吗？
+        </a>
+      </h1>
+    </header>
+
+    <p>   2021年4月5日，我终于盼到了清明节，舍友们都回家了，我很珍惜这个来之不易的安静。</p>
+<p>   现在傍晚六点外面雨声淅沥，湿冷的空气让人只想在躲在被窝里。我躺在床上，闭上眼睛，做了一个长达5秒的呼吸，此时时间变慢，节奏变缓&hellip;</p>
+<p>   老长一段时间了，每天的状态就是：吃饭+上号，我打开时间管理助手，映入眼帘的是软件使用时间的排名，第一名的话毫无疑问，是我最爱玩的。对于此时所见，想问自己几个问题</p>
+<p>   究竟是什么原因让你如此喜欢游戏？游戏的本质到底是什么？玩游戏到底有什么用？</p>
+<p>   作为一个人，本性总是趋于懒惰的，但人又是社会性的，这就说明人一定会有各种大小压力，每次都战胜肉体去工作学习，是很难的，但如果不做，欠下的一定会还回来，时间会把这些东西积累到一个点，“好难啊”，比如一个问题听不懂其实根本原因也只是之前的问题没有解决。人在这种矛盾中徘徊是很难受的，而一把游戏好像可以让你喘口气，暂时离开现实，你只管开心，大脑分泌的多巴胺让你快乐十足。喘口气吧，这就是我喜欢游戏的原因。</p>
+<p>   但答案是这个吗？问题解决到此为止了吗？这似乎还不是根本原因。那游戏能够创造快乐的本质到底是什么？</p>
+<p>   整理一下逻辑，每款游戏都对应一套规则，有目标，有奖罚，有排名，有成就感和不确定性，规则赋予了游戏价值，而游戏也正是在于他的过程，对于最后的结果只是一个附带奖励，如果能无视规则无法直接触碰结果，那游戏就丧失了意义。回想一下当下流行的游戏里都有什么内容？绝地求生，塔防，GTA激情冒险，巫师3的奇幻剧情，还有射击枪战&hellip;，呼&hellip;撕开表皮再想一圈几乎可以总结出几个词：求生，竞争，暴力，色情，经营，虚拟乌托邦世界，每个词好像又是人性弱点的映射，这样看，游戏不就是在顺从人类的原始欲望吗？心理学家马斯洛，把人的需求分为五个层次：生理需求，安全需求，社交需求，尊重需求，自我实现，现在的高质量游戏除了不能给人提供食物和水，其他需求几乎可以全部满足。从小型的益智，冒险游戏到如今的3A大作，VR游戏，它变得更加刺激你的感官，让你直呼过瘾，但这何尝不是一次又一次的沉沦？你一旦停止思考，它就不断的挖掘你的欲望，利用人类对物质的贪婪和成瘾性，达到一种“控制感”，时间和精力悄然流逝，换来的是短暂的快乐，和快乐之后面对现实的巨大落差，与无力感。于是再次投向游戏。</p>
+<p>   玩游戏有什么用？每个人感悟不同，对于我来说答案已经不言而喻。毫无意义。So wake up and now I&rsquo;m going to get real peace and joy.</p>
+
+  </article>
+</section>
+
+  
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>爱生活，爱分享，欢迎来到我的博客</p>
+      
+      
+        ©
+        
+        2021
+         WeiZeGuang&#39;Blog 
+      
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js" integrity="sha256-runIpGTrezU0xxEPfF4WnnA54v2ScQ4GJtRR1nJa8Tc="></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+    
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "token"}'></script>
+
+
+
+    <script type="application/javascript">
+  var _paq = window._paq = window._paq || [];
+   
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.example.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'ABCDE']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=gid"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'gid');
+</script>
+
+  </body>
+
+</html>
